@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yangiliklar</title>
+    <link rel="stylesheet" href="{% static 'css/base.css'%}">
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'home' %}">Kun.uz page</a></h1>
+    </header>
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+</body>
+</html>
